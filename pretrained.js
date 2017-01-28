@@ -9,7 +9,7 @@ trainIterations = 500000;
 var num_inputs = (lanesSide * 2 + 1) * (patchesAhead + patchesBehind);
 var num_actions = 5;
 var temporal_window = 0;
-var network_size = num_inputs * creattemporal_window + num_actions * temporal_window + num_inputs;
+var network_size = num_inputs * temporal_window + num_actions * temporal_window + num_inputs;
 
 var layer_defs = [];
 layer_defs.push({
